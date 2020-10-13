@@ -1,0 +1,11 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, linux, x64, self]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
